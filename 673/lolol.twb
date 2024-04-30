@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Clinic Patients Demographics (OMIS 673 Class Data)' inline='true' name='federated.1yug5fq0yenfu2179ked00sg0mj3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='OMIS 673 Class Data' name='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/perik/Downloads/OMIS 673 Class Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+          <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Pt ID' ordinal='0' />
+            <column datatype='string' name='Gender' ordinal='1' />
+            <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+          <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Pt ID' ordinal='0' />
+            <column datatype='string' name='Gender' ordinal='1' />
+            <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D168:no:A1:D168:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pt ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pt ID]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Pt ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race/Ethnicity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Race/Ethnicity]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Race/Ethnicity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Pt ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Clinic Patients Demographics' datatype='table' name='[__tableau_internal_object_id__].[Clinic Patients Demographics_E940131670364A7B938733595C94413F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Clinic Patients Demographics' id='Clinic Patients Demographics_E940131670364A7B938733595C94413F'>
+            <properties context=''>
+              <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+                <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Pt ID' ordinal='0' />
+                  <column datatype='string' name='Gender' ordinal='1' />
+                  <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Patient Readmission Days (OMIS 673 Class Data)' inline='true' name='federated.0fhd0ig1klcyjb1b91jwz0olh6ki' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='OMIS 673 Class Data' name='excel-direct.02778if066j6ei190fj4o0828lu9'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/perik/Downloads/OMIS 673 Class Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.02778if066j6ei190fj4o0828lu9' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+          <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Pt ID' ordinal='0' />
+            <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+            <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.02778if066j6ei190fj4o0828lu9' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+          <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Pt ID' ordinal='0' />
+            <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+            <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C168:no:A1:C168:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pt ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pt ID]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Pt ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Patient Readmission Days_A62661D1DD4B4A55B20048E8160BC22D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cardiovascular Patients</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cardiovascular Patients]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Cardiovascular Patients</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Patient Readmission Days_A62661D1DD4B4A55B20048E8160BC22D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of days to readmission</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of days to readmission]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Number of days to readmission</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Patient Readmission Days_A62661D1DD4B4A55B20048E8160BC22D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Pt ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Patient Readmission Days' datatype='table' name='[__tableau_internal_object_id__].[Patient Readmission Days_A62661D1DD4B4A55B20048E8160BC22D]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Patient Readmission Days' id='Patient Readmission Days_A62661D1DD4B4A55B20048E8160BC22D'>
+            <properties context=''>
+              <relation connection='excel-direct.02778if066j6ei190fj4o0828lu9' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+                <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Pt ID' ordinal='0' />
+                  <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+                  <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='clinic patient demographics and readmission days' inline='true' name='federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='OMIS 673 Class Data' name='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/perik/Downloads/OMIS 673 Class Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Clinic Patients Demographics].[Pt ID]' />
+              <expression op='[Patient Readmission Days].[Pt ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+            <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Pt ID' ordinal='0' />
+              <column datatype='string' name='Gender' ordinal='1' />
+              <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+              <column datatype='integer' name='Age' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+            <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Pt ID' ordinal='0' />
+              <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+              <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Clinic Patients Demographics].[Pt ID]' />
+              <expression op='[Patient Readmission Days].[Pt ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+            <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Pt ID' ordinal='0' />
+              <column datatype='string' name='Gender' ordinal='1' />
+              <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+              <column datatype='integer' name='Age' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+            <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Pt ID' ordinal='0' />
+              <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+              <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Age]' value='[Clinic Patients Demographics].[Age]' />
+          <map key='[Cardiovascular Patients]' value='[Patient Readmission Days].[Cardiovascular Patients]' />
+          <map key='[Gender]' value='[Clinic Patients Demographics].[Gender]' />
+          <map key='[Number of days to readmission]' value='[Patient Readmission Days].[Number of days to readmission]' />
+          <map key='[Pt ID (Patient Readmission Days)]' value='[Patient Readmission Days].[Pt ID]' />
+          <map key='[Pt ID]' value='[Clinic Patients Demographics].[Pt ID]' />
+          <map key='[Race/Ethnicity]' value='[Clinic Patients Demographics].[Race/Ethnicity]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D168:no:A1:D168:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C168:no:A1:C168:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pt ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pt ID]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Pt ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race/Ethnicity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Race/Ethnicity]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Race/Ethnicity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Clinic Patients Demographics]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pt ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pt ID (Patient Readmission Days)]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Pt ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cardiovascular Patients</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cardiovascular Patients]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Cardiovascular Patients</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of days to readmission</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of days to readmission]</local-name>
+            <parent-name>[Patient Readmission Days]</parent-name>
+            <remote-alias>Number of days to readmission</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clinic Patients Demographics_E940131670364A7B938733595C94413F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Pt ID (Patient Readmission Days)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Pt ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Clinic Patients Demographics' datatype='table' name='[__tableau_internal_object_id__].[Clinic Patients Demographics_E940131670364A7B938733595C94413F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Clinic Patients Demographics' id='Clinic Patients Demographics_E940131670364A7B938733595C94413F'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Clinic Patients Demographics].[Pt ID]' />
+                    <expression op='[Patient Readmission Days].[Pt ID]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Clinic Patients Demographics' table='[&apos;Clinic Patients Demographics$&apos;]' type='table'>
+                  <columns gridOrigin='A1:D168:no:A1:D168:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='Pt ID' ordinal='0' />
+                    <column datatype='string' name='Gender' ordinal='1' />
+                    <column datatype='string' name='Race/Ethnicity' ordinal='2' />
+                    <column datatype='integer' name='Age' ordinal='3' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.01fx3th0ubjv5z11o4nxu0z9kie7 (copy)' name='Patient Readmission Days' table='[&apos;Patient Readmission Days$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C168:no:A1:C168:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='Pt ID' ordinal='0' />
+                    <column datatype='string' name='Cardiovascular Patients' ordinal='1' />
+                    <column datatype='integer' name='Number of days to readmission' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clinic patient demographics and readmission days' name='federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of days to readmission]' role='measure' type='quantitative' />
+            <column-instance column='[Number of days to readmission]' derivation='Avg' name='[avg:Number of days to readmission:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[none:Gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[avg:Number of days to readmission:qk]</rows>
+        <cols>[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{E5D71A48-EFC3-4EEA-8142-94BF08C72E2B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[none:Gender:nk]</field>
+            <field>[federated.1yug5fq0yenfu2179ked00sg0mj3 (copy)].[none:Race/Ethnicity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E22502F2-F1F3-44D4-8169-26A77D61D7B4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='183'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
